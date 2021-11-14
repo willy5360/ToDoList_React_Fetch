@@ -1,13 +1,105 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+#app{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(215,88,36);
+background: linear-gradient(225deg, rgba(255,255,255,1) 0%, rgba(34,122,208,1) 100%);
+}
+.deleted{
+    text-decoration: line-through 3px rgba(228,70,5,1);
+   
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    padding: 45px;
+    border-radius: 15px;
+    background: rgba(228,70,5,0.15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgba(34,122,208, 0.5);
 
-/* 
+}
+h1 {
+    font-size: 72px;
+    color:rgb(255, 231, 231);
+    font-family: 'Zen Kurenaido', sans-serif;    
+    font-weight: bold;
+    margin: 0;
+  }
+.header_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: grey solid 0.5px;
+}
+.inputTask {
+border-radius: 10px;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+border: 0;
+width: 100%;
+height: 40px;
+padding: 0 0 0 25px;
+background-color: transparent;
+color: white;
+}
+.inputTask::placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+font-family: 'Zen Kurenaido', sans-serif;    
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+color: rgb(88, 88, 88);
+opacity: 1; /* Firefox */
+}
+.inputTask::-webkit-outer-spin-button,
+.inputTask::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.inputTask:hover {
+box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.5);
+}
+input[type="checkbox"] {
+    align-self: center;
+    width: 70px;
+    height: 40px;
+  
+}
 
-*/
+
+.itemList{
+    margin-left: 15px;
+
+}
+ul{
+    width: 100%;
+    padding: 0;
+    // border: 3px #506BA6 solid;
+}
+li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+    height:fit-content;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-family: 'Zen Kurenaido', sans-serif;    
+    font-size: 1.25rem;
+    color: rgb(255, 231, 231);
+}
+.buttons_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
